@@ -1,9 +1,7 @@
-const ranger = document.querySelector("#font-size-control")
-const spanText = document.querySelector("#text")
+const rangerEl = document.querySelector('#font-size-control');
+const textEl = document.querySelector('#text');
 
-ranger.addEventListener("input", onRange);
-function onRange (evt) {
-    spanText.style.fontSize = `${evt.target.value}px`
+rangerEl.addEventListener('input', onRange);
+function onRange(evt) {
+  textEl.style.fontSize = `${evt.target.value}px`;
 }
-
-
